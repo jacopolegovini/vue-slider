@@ -23,17 +23,20 @@
             <h1>Carousel</h1>
             <div class="card">
                 <div class="container-carousel">
-                    <i class="fa-solid fa-arrow-left" @click="decreaseCounter"></i>
-                    <div class="carousel-photo" v-for="(img, index) in images">
-                        <img  v-if="index === currentIndex" :src="img.image" alt="img.title">
+                    <i class="fa-solid fa-arrow-up" @click="decreaseCounter"></i>
+                    <div class="carousel-photo">
+                        <div class="images" v-for="(img, index) in images">
+                            <img  v-if="index === currentIndex" :src="img.image" :alt="img.title">
+                            <div class="photo-text"></div>
+                        </div>
                     </div>
-                    <i class="fa-solid fa-arrow-right" @click="increaseCounter"></i>
-                    <!-- <div class="thumbnails-photo-md"></div> -->
+                    <i class="fa-solid fa-arrow-down" @click="increaseCounter"></i>
                 </div>
-                <!-- <div class="container-thumbnails">
-                    <div class="thumbnails-photo">
+                <div class="container-thumbnails">
+                    <div class="thumbnails-photo" v-for="(img, index) in images">
+                        <img :src="img.image" :alt="img.title">
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
