@@ -41,6 +41,10 @@ const app = createApp({
         decreaseCounter() {
             if (this.currentIndex <= 0) return this.currentIndex = this.images.length - 1;
             this.currentIndex--;
+        },
+
+        setToCounter() {
+            this.currentIndex = images[i]
         }
     }
 })

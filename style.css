@@ -16,7 +16,7 @@ h1 {
 
 /* Utilities */
 
-.active {
+.thumbnails-photo .active {
     display: block;
 }
 
@@ -52,6 +52,20 @@ h1 {
 .fa-solid {
     cursor: pointer;
     font-size: 2rem;
+}
+
+/* Images */
+
+.images {
+    position: relative;
+}
+
+.photo-text {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    padding: 0 10px;
+    text-align: right;
 }
 
 
