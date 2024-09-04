@@ -1,0 +1,83 @@
+/* General */
+
+img {
+    width: 450px;
+    object-fit: contain;
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+/* Utilities */
+
+.active {
+    display: block;
+}
+
+.card {
+    background-color: aliceblue;
+    border-radius: 30px;
+    height: 750px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Carosello */
+
+.container-carousel {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.carousel-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.fa-solid {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+/* Thumbnails */
+
+.container-thumbnails {
+    margin-top: 20px;
+}
+
+.thumbnails-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.thumbnails-photo img {
+    display: block;
+    width: 10%;
+    opacity: 0.5;
+}
+
+.thumbnails-photo .focus {
+    scale: 1.1;
+    box-shadow: 2px 2px gray;
+    opacity: 1;
+}
+
+.thumbnails-photo-md {
+    display: none;
+}
