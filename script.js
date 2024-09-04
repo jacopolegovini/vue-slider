@@ -33,7 +33,15 @@ const app = createApp({
 
     }),
     methods: {
+        increaseCounter() {
+            if (this.currentIndex === this.images.length - 1) return this.currentIndex = 0;
+            this.currentIndex++;
+        },
 
+        decreaseCounter() {
+            if (this.currentIndex <= 0) return this.currentIndex = this.images.length - 1;
+            this.currentIndex--;
+        }
     }
 })
 
