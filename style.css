@@ -3,7 +3,6 @@
 img {
     width: 450px;
     object-fit: contain;
-    display: none;
 }
 
 h1 {
@@ -32,8 +31,9 @@ h1 {
 /* Carosello */
 
 .container-carousel {
-    height: 600px;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
