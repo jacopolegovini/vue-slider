@@ -27,14 +27,17 @@
                     <div class="carousel-photo">
                         <div class="images">
                             <img :src="images[currentIndex].image" alt="test">
-                            <div class="photo-text"><strong>{{images[currentIndex].title}}</strong><br>{{ images[currentIndex].text }}</div>
+                            <div class="photo-text">
+                                <div><strong>{{images[currentIndex].title}}</strong></div>
+                                <div>{{ images[currentIndex].text }}</div>
+                            </div>
                         </div>
                     </div>
                     <i class="fa-solid fa-arrow-down" @click="increaseCounter"></i>
                 </div>
-                <!-- <div class="container-thumbnails">
-                    <div class="thumbnails-photo" v-for="(img, index) in images">
-                        <img :src="img.image" :alt="img.title" class="" @click="setToCounter"> -->
+                <div class="container-thumbnails">
+                    <div class="thumbnails-photo" v-for="(img, index) in images" @click="setToCounter">
+                        <img :src="img.image" :alt="img.title" class="" @click="setToCounter">
                     </div>
                 </div>
             </div>
