@@ -44,7 +44,7 @@ const app = createApp({
         },
 
         setToCounter() {
-            this.currentIndex = images[i]
+            console.log(this.images[this.currentIndex.image])
         }
     }
 })

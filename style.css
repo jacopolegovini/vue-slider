@@ -1,7 +1,7 @@
 /* General */
 
 img {
-    width: 450px;
+    width: 500px;
     object-fit: contain;
 }
 
@@ -24,7 +24,7 @@ h1 {
     background-color: aliceblue;
     border-radius: 30px;
     height: 750px;
-    width: 650px;
+    width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -53,6 +53,7 @@ h1 {
     cursor: pointer;
     font-size: 2rem;
 }
+
 
 /* Images */
 
@@ -86,7 +87,7 @@ h1 {
 
 .thumbnails-photo img {
     display: block;
-    width: 50%;
+    width: 35%;
     opacity: 0.5;
 }
 
